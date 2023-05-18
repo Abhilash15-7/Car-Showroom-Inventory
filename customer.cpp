@@ -1,4 +1,50 @@
-
+int custdetinput()
+{
+	cout << "\nEnter today's date :";
+	cout << "Enter day :";
+	cin >> cd1.bday;
+	cout << "Enter month :";
+	cin >> cd1.bm;
+	cout << "Enter year :";
+	cin >> cd1.byear;
+	cd1.cs = se;
+	cout << "Enter your details :\n";
+	cout << "First Name :";
+	gets(cd1.firstname);
+	cout << "Last Name :";
+	gets(cd1.lastname);
+	cout << "House no.,street :";
+	gets(cd1.address1);
+	cout << "Area :";
+	gets(cd1.address2);
+	cout << "City :";
+	gets(cd1.city);
+	cout << "State :";
+	gets(cd1.state);
+	cout << "Pincode :";
+	cin >> cd1.pin;
+	cout << "Email-address :";
+	gets(cd1.emailaddress);
+	cout << "Mobile number : ";
+	gets(cd1.mobilenumber);
+	return 0;
+}
+int custdetdisplay()
+{
+	cout << "Date : " << cd1.bday << "-" << cd1.bm << "-" << cd1.byear;
+	cout << "\nRegistration Number :" << cd1.cs;
+	cout << "\nYour details are :\n";
+	cout << "\nFirst Name : " << cd1.firstname;
+	cout << "\nLast Name : " << cd1.lastname;
+	cout << "\nHouse no.,street : " << cd1.address1;
+	cout << "\nArea : " << cd1.address2;
+	cout << "\nCity : " << cd1.city;
+	cout << "\nState : " << cd1.state;
+	cout << "\nPincode : " << cd1.pin;
+	cout << "\nEmail-address : " << cd1.emailaddress;
+	cout << "\nMobile number : " << cd1.mobilenumber;
+	return 0;
+}
 int customerdetinpf()
 {
 	ofstream clout("cust_details.dat", ios::app | ios::binary | ios::out);
