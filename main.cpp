@@ -19,22 +19,7 @@ char reply, ser[] = "wash&sevicing";
 char serv[] = "painting";
 long int bud, mprof = 0, prof, pcost;
 
-struct custdetails
-{
-	int cs;
-	int bday, bm, byear;
-	char firstname[20];
-	char lastname[20];
-	char address1[20];
-	char address2[20];
-	char city[15];
-	char state[20];
-	char pin[6];
-	char emailaddress[40];
-	char mobilenumber[11];
-	char service[50];
-	long int amount;
-} cd1;
+
 
 
 int carselected()
